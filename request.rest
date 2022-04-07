@@ -1,0 +1,44 @@
+POST http://localhost:4321/monsters
+Content-Type: application/json
+
+{
+    "name": "Sparky",
+    "personality": "playful"
+}
+
+###
+
+GET http://localhost:4321/monsters
+
+###
+
+PUT http://localhost:4321/monsters/5
+Content-Type: application/json
+
+{
+
+    "personality": "friendly"
+}
+
+###
+
+DELETE http://localhost:4321/monsters/6
+
+###
+
+GET http://localhost:4321/habitats
+
+###
+
+POST http://localhost:4321/habitats
+Content-Type: application/json
+
+{
+    "name": "tide pools",
+    "climate": "humid",
+    "temperature": 60
+}
+
+###
+
+GET http://localhost:4321/lives/conditions
